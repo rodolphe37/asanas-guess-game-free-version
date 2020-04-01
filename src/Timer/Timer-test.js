@@ -3,7 +3,7 @@ import Modal from './Modal';
 import HeaderTime from './HeaderTime';
 
 
-const GAME_DURATION = 1000 * 180; // 180 seconds
+const GAME_DURATION = 1000 * 120; // 120 seconds
 
 // method to get time left
 export const getTimeLeft = deadline => deadline - Date.now();

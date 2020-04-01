@@ -22,10 +22,10 @@ class AsanasGuess extends Component {
   }
 
 componentDidMount() {
-  const apiUrlLocal = "http://localhost:3001/asanas";
-  // const apiUrlRemote = "https://raw.githubusercontent.com/rodolphe37/asanas-guess-game/master/api-server/data/asanas.json"
-  fetch(apiUrlLocal)
-  // fetch(apiUrlRemote)
+  // const apiUrlLocal = "http://localhost:3001/asanas";
+  const apiUrlRemote = "https://raw.githubusercontent.com/rodolphe37/asanas-guess-game-free-version/master/api-server/data/asanas.json"
+  // fetch(apiUrlLocal)
+  fetch(apiUrlRemote)
   .then(data => data.json())
   .then(asanas => this.setState({asanas}))
   .then(this.getRandomAsanas)

@@ -119,8 +119,7 @@ scoreColor = () => {
 
 
 render() {
-
-  return (
+  return (console.log(this.state.goodGuess),
       <div className="main" >
       <div className="flex-guess">
           <div className="wrapper-guess" style={this.state.bgColor}>
@@ -138,7 +137,7 @@ render() {
                   <button className="mui-btn mui-btn--raised btn" value={this.state.randomOptions[2]}>{this.state.randomOptions[2]}</button>
                   <button className="mui-btn mui-btn--raised btn" value={this.state.randomOptions[3]}>{this.state.randomOptions[3]}</button>
               </form>
-              {/*<Timer/>*/}
+          {/*<Timer score={this.state.goodGuess}/>*/}
           </fieldset>
           </div>
           <div className="describe-views">

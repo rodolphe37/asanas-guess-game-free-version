@@ -25,8 +25,11 @@ const initialState = {
 };
 
 export default class Timer extends React.Component {
+  // constructor(props) {
+  //   super(props)
+  //   this.state.score = this.setState.goodGuess
+  // }
   state = initialState;
-
   startGame = () => {
     this.currentDeadline = Date.now() + GAME_DURATION;
 
@@ -40,7 +43,7 @@ export default class Timer extends React.Component {
   };
 
   gameLoop = () => {
-    this.score = this.props.score
+    this.score = this.state.score
     this.timer = setInterval(() => {
       const timeLeft = getTimeLeft(this.currentDeadline);
       const isTimeout = timeLeft <= 0;
@@ -75,18 +78,17 @@ export default class Timer extends React.Component {
 
 
 
-  render(){
+  render(goodGuess){
     const { gameState, timeLeft } = this.state;
     const count = this.props.count
     const {victoyGame, itemsId, dragId } = this.props
-    const score = this.props.score
     let isTotalMatch = this.props.isTotalMatch
     return (
       <div {...itemsId === dragId ? this.endGame : null}>
       <HeaderTime victoyGame={victoyGame}  gameState={gameState} timeLeft={timeLeft} endGame={this.endGame} isTotalMatch={isTotalMatch} />
       {this.state.gameState !== GAME_STATE.PLAYING && (
         <Modal
-          score={score}
+          score={goodGuess}
           victoyGame={victoyGame}
           count={count}
           startGame={this.startGame}

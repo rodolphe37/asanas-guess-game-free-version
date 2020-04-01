@@ -10,7 +10,7 @@ const reloadGame = () => {
 
 
 
-const Modal = ({ gameState, startGame, resetGame, count ,victory, score }) => {;
+const Modal = ({ gameState, startGame, resetGame, count ,victory, score, }) => {;
 
   let dot = () => {
     if(score < 2) {

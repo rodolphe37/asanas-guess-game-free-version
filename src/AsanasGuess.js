@@ -37,15 +37,15 @@ getRandomAsanas() {
   const randomOpt1 = this.state.asanas[Math.floor(Math.random()*this.state.asanas.length)];
   const randomOpt2 = this.state.asanas[Math.floor(Math.random()*this.state.asanas.length)];
   const randomOpt3 = this.state.asanas[Math.floor(Math.random()*this.state.asanas.length)];
-  const randomOptions = [random.nameUs, randomOpt1.nameUs, randomOpt2.nameUs, randomOpt3.nameUs];
+  const randomOptions = [random.nameFr, randomOpt1.nameFr, randomOpt2.nameFr, randomOpt3.nameFr];
   randomOptions.sort(() => { return 0.5 - Math.random() });
   this.setState({
       randomAsanas: random,
       randomOptions: randomOptions,
       userIsWin: '',
-      benefits:random.benefits,
+      benefices:random.benefices,
       sanskritName:random.sanskritName,
-      difficulty:random.difficulty,
+      difficulte:random.difficulte,
       disableFieldset: false
   })
 }
@@ -54,7 +54,7 @@ checkWin(e) {
   this.setState({
       disableFieldset: true
   })
-  const winAsanas = this.state.randomAsanas.nameUs;
+  const winAsanas = this.state.randomAsanas.nameFr;
   const userGuess = e.target.value;
   if (winAsanas === userGuess) {
       this.setState({
@@ -145,9 +145,9 @@ render() {
               <h3>Nom Sanskrit (संस्कृतम्):</h3>
               <p>{this.state.sanskritName}</p>
               <h3>Niveau (कठिनता):</h3>
-              <p>{this.state.difficulty}</p>
+              <p>{this.state.difficulte}</p>
               <h3>Bénéfices (परिणाम):</h3>
-              <p>{this.state.benefits}</p>
+              <p>{this.state.benefices}</p>
           </div>
         </div>
       </div>

@@ -147,6 +147,7 @@ render() {
               <p>{this.state.difficulte}</p>
               <h3>Bénéfices (परिणाम):</h3>
               <p>{this.state.benefices}</p>
+              <img src={require('./ressources/logo-amano-hilot.png')} alt="" />
           </div>
         </div>
       </div>

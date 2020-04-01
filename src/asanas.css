@@ -169,6 +169,10 @@ h2{
   color: #FF8A65;
 }
 
+.describe-views > img {
+  width: 35%;
+}
+
 fieldset {
   padding: 0;
   border: 0;

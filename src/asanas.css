@@ -1,0 +1,220 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.main{
+  height: 91vh;
+  font-family:Roboto,
+  sans-serif;
+  background-image: url('./ressources/yoga-asanas.png');
+  background-position: center;
+  background-repeat-y: no-repeat;
+}
+
+h1,h2{
+  text-align:center;
+  font-weight:300;
+  font-size:3rem
+}
+
+h1{
+  padding:20px
+}
+h2{
+  font-size:2rem;
+  margin-top:0
+}
+.img-container-guess{
+  margin:0 auto;
+  height:330px}
+  .mui-panel{
+    padding:0
+  }
+  img{
+    max-height:350px;
+    margin:30px auto
+  }
+  .rnd{
+    width:200px;
+    margin:0 auto
+  }
+  /* .wrapper-guess{
+    -ms-flex-direction:column;
+    flex-direction:column;
+    width:80%
+  }
+  .wrapper-guess,fieldset{
+    display:-ms-flexbox;
+    display:flex;
+    margin:0 auto
+  } */
+  fieldset{
+    padding:0;
+    border:0
+  }
+  form{
+    display:-ms-flexbox;
+    display:flex;
+    margin:0 auto;
+    width:99%;
+    -ms-flex-pack:center;
+    justify-content:center;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap
+  }
+    .btn{
+      /* max-width:300px; */
+    -o-text-overflow:ellipsis;
+    text-overflow:ellipsis;
+    position: relative;
+    z-index: 100;
+
+  }@media (max-width:1000px){
+    .img-container{
+      height:auto;
+    max-width:80%
+  }
+  img{
+    max-height:auto;
+    max-width:100%
+  }
+  h1{
+    padding:0
+  }
+}
+/*# sourceMappingURL=main.a975a65e.css.map*/
+
+
+.btn:active, .btn.active {
+  background: #4b48d6;
+  border-color: #3634d2;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-primary:active, .btn-primary.active {
+  background: #3a38d2;
+  border-color: #302ecd;
+  color: #fff;
+}
+
+.btn-primary:focus, .btn-primary:hover {
+  background: #4240d4;
+  border-color: #3634d2;
+  color: #fff;
+}
+
+.btn-primary {
+  background: #5755d9;
+  border-color: #4b48d6;
+  color: #fff;
+}
+
+.btn:focus, .btn:hover {
+  background: #f1f1fc;
+  border-color: #4b48d6;
+  text-decoration: none;
+}
+
+.btn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #fff;
+  border: .05rem solid #5755d9;
+  border-radius: 10px;
+  color: #5755d9;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.1rem;
+  height: auto;
+  line-height: 2.2rem;
+  outline: none;
+  padding: .25rem .4rem;
+  text-align: center;
+  text-decoration: none;
+  transition: background .2s, border .2s, box-shadow .2s, color .2s;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  margin-top: 8px;
+  margin-right: 5px;
+  font-size: 15px;
+}
+
+.flex-guess {
+  display: flex;
+}
+
+.describe-views {
+  max-width: 34vw;
+  background-color: rgba(255,255,255,.8);
+  margin-left: 20px;
+  color: black;
+  font-weight: 900;
+  border: 1px solid #38006b;
+  border-radius: 10px;
+  box-shadow: 12px 12px 40px black;
+  text-align: center;
+  padding: 10px;
+}
+
+.describe-views > p {
+  font-size: 14px;
+}
+
+.describe-views > h3 {
+  color: #FF8A65;
+}
+
+fieldset {
+  padding: 0;
+  border: 0;
+  margin-top: -47px;
+  margin-bottom: 25px;
+}
+
+.score-view {
+  margin-top: 7px;
+  color: red;
+  font-weight: 700;
+}
+
+.mui-panel {
+  padding: 0;
+  margin-top: -38px;
+  position: relative;
+  z-index: 50;
+}
+
+button.rnd.mui-btn.mui-btn--raised.btn {
+  position: relative;
+  z-index: 100;
+  margin-top: -19px;
+}
+
+.purple {
+  color:purple;
+}
+
+.indigo {
+  color:indigo
+}
+
+.turquoise {
+  color:turquoise;
+}
+
+.green {
+  color:green;
+}
+
+.yellow {
+  color:yellow;
+}
+
+.orange {
+  color:orange;
+}

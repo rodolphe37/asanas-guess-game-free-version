@@ -66,11 +66,11 @@ const Modal = ({ gameState, startGame, resetGame, count ,victory, score, }) => {
                 vous n'avez que 120 secondes (2 minutes),
                 faites le rapidement pour avoir un meilleur score...
                 <p className="orange">
-                  Un indice éventuel, diverses informations (versions payantes) ainsi que les bienfaits de la position apparente devant vous sont listés sur le panel gauche. et si ce n'est pas un indice... alors cela feras un bon exercice pour mémoriser les positions avec leurs noms ainsi que les info inhérentes à celles ci
+                  Un indice éventuel, les bienfaits de la position apparente devant vous sont listés sur le panel gauche. et si ce n'est pas un indice... alors cela feras un bon exercice pour mémoriser les positions avec leurs noms ainsi que les info inhérentes à celles ci
                 </p>
-                <p className="red">
+               {/* <p className="red">
                   ... Attention, Ce jeu ne se substitut pas à un professeur expérimenté, il n'a pas vocation à ça. Ce jeu est fait pour compléter votre apprentissage par le biais de jeux sur la mémoire... Toute pratique du Yoga se fait avec un avis médical positif de son médecin.
-                </p>
+        </p>*/}
               </div>
             </div>
           : <div className="polaroid">
